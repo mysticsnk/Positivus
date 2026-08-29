@@ -1,0 +1,19 @@
+@use "../global/scss/base/imports";
+@use "../global/scss/base/functions";
+@use "../global/scss/base/mixins";
+@use "../global/scss/base/variables";
+@use "../global/scss/base/important";
+
+@use "../global/scss/components/nav";
+@use "../global/scss/components/footer";
+
+@use "scss-files/main-page-upper-section";
+@use "../global/scss/sections/company-section";
+@use "../global/scss/sections/title-section";
+@use "scss-files/service-cards-section";
+@use "scss-files/make-things-happen-section";
+@use "scss-files/case-studies-section";
+@use "../global/scss/sections/accordion-cards-section";
+@use "scss-files/team-section";
+@use "../global/scss/sections/testimonials-section";
+@use "../global/scss/sections/form-section";

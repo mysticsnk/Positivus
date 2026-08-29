@@ -1,0 +1,23 @@
+@use '../base/variables' as vars;
+
+.company-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        filter: grayscale(100%);
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+    .company-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+        &__item {
+            justify-self: center;
+        }
+    }
+}

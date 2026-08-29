@@ -1,0 +1,30 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+@forward '../components/chess-card';
+
+.chess-card-section {
+    width: 100%;
+    padding: funcs.to-rem(70) funcs.to-rem(60);
+    border-radius: funcs.to-rem(45);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: funcs.to-rem(64);
+
+    & > .chess-card-vertical-separator {
+        width: 10px;
+    }
+}   
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .chess-card-section {
+        background-color: transparent; 
+        overflow-x: scroll;
+
+        & > .chess-card-vertical-separator {
+            display: none;
+        }
+
+    }
+}

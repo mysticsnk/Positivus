@@ -1,0 +1,39 @@
+@use '../base/mixins';
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+
+.title-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: funcs.to-rem(40);
+    align-items: center;
+    justify-content: start;
+    top: funcs.to-rem(20);
+
+    &>h2 {
+        @include mixins.title-padding-radius();
+        background-color: var(--simple-green-color);
+    }
+
+    &>p {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+    .title-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        &>p {
+            width: 60%;
+            text-align: center
+        }
+
+    }
+}

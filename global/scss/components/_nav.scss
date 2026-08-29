@@ -1,0 +1,137 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.397);
+    backdrop-filter: blur(5px);
+    width: calc(var(--site-width) - funcs.to-rem(200));
+    padding: funcs.to-rem(10);
+    margin: 0 auto;
+    margin-top: funcs.to-rem(40);
+    margin-bottom: funcs.to-rem(60);
+    z-index: 3;
+
+    &>ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: funcs.to-rem(40);
+        padding-left: 0;
+
+        & > .website-title {
+            justify-self: start;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            gap: funcs.to-rem(16);
+            text-decoration: none;
+            
+            & > h3 {
+                color: var(--dark-color);
+            }
+
+            &>img {
+                width: var(--name-img-size);
+                height: var(--name-img-size);
+            }
+
+        }
+
+        &>.nav-links-container {
+            display: flex;
+            flex-direction: row;
+            gap: funcs.to-rem(40);
+
+            &>li {
+
+                &>a {
+                    font-size: var(--desktop-p);
+                    height: 100%;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    color: var(--dark-color);
+
+                    &:hover {
+                        color: var(--hover-color);
+                    }
+                }
+            }
+
+            & #nav__button {
+                padding: funcs.to-rem(20) funcs.to-rem(35);
+                border: 1px solid var(--dark-color);
+                border-radius: funcs.to-rem(14);
+            }
+        }
+    }
+}
+
+#show-burger-menu-button {
+    display: none;
+}
+
+.burger-menu-nav {
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 4;
+    background-color: white;
+    overflow-y: scroll;
+    transition: transform 0.5s ease;
+
+    &__close-button {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &>ul {
+        flex-direction: column;
+        justify-content: start;
+        gap: funcs.to-rem(20);
+
+
+        &>.nav-links-container {
+            flex-direction: column;
+            gap: 0;
+
+            &>li {
+                padding: funcs.to-rem(12) funcs.to-rem(15);
+
+                &>a {
+                    text-align: center;
+                }
+            }
+
+            &>li:hover:not(:last-child) {
+                background-color: rgb(226, 226, 226);
+            }
+        }
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    nav {
+        width: 100%;
+    }
+
+    #show-burger-menu-button {
+        display: inline;
+    }
+
+    .nav-bar-item {
+        display: none;
+    }
+}

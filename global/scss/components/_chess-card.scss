@@ -1,0 +1,27 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+@use '../base/mixins';
+
+.chess-card {
+    display: flex;
+    flex-direction: column;
+    gap: funcs.to-rem(20);
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: funcs.to-rem(15);
+        text-decoration: none;
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .chess-card {
+        border-radius: funcs.to-rem(45);
+        padding: funcs.to-rem(40);
+        width: funcs.to-rem(350);
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,35 @@
+@use '../base/functions' as funcs;
+@use '../base/mixins';
+
+.testimony {
+    scroll-snap-align: center;
+    width: funcs.to-rem(606);
+    height: funcs.to-rem(330);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: funcs.to-rem(20);
+
+    & > .bubble-wrapper {
+        background-image: url(../img/Bubble.png);
+        background-size: cover;
+        height: 100%;
+
+        & > p {
+            z-index: 2;
+            padding: funcs.to-rem(48) funcs.to-rem(52);
+        }
+    }
+
+    & > .person-part {
+        display: flex;
+        flex-direction: column;
+        gap: funcs.to-rem(5);
+        align-self: center;
+
+        & > h4 {
+            color: var(--simple-green-color);
+        }
+    }
+}

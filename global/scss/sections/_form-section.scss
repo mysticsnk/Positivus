@@ -1,0 +1,80 @@
+@use '../base/mixins';
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-color);
+    padding: funcs.to-rem(60) funcs.to-rem(100);
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 45px;
+
+    & > form {
+        display: flex;
+        flex-direction: column;
+        gap: funcs.to-rem(40);
+
+        & > .radio-part {
+
+            & > label {
+                font-size: var(--desktop-p);
+            }
+
+            & > input {
+                accent-color: var(--simple-green-color);
+            }
+        }
+
+        & > .text-input-part {
+            display: flex;
+            flex-direction: column;
+            gap: funcs.to-rem(25);
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                gap: funcs.to-rem(5);
+
+                & > label {
+                    font-weight: 550;
+                }
+
+                & > input, textarea {
+                    border-radius: funcs.to-rem(14);
+                    padding: funcs.to-rem(18) funcs.to-rem(30);
+                    border: 1px solid var(--dark-color);
+                }
+            }
+        }
+
+        & > button {
+            @include mixins.special-button();
+        }
+        
+    }
+
+    & > img {
+        transform: translateX(40%);
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .input-section {
+        align-items: center;
+        background-color: transparent;
+
+        & > form {
+            width: 100%;
+            background-color: var(--light-color);
+            padding: funcs.to-rem(30) funcs.to-rem(20);
+            border-radius: 45px;
+        }
+
+        & > img {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@use '../base/functions' as funcs;
+@use '../base/mixins';
+
+.accordion-card {
+    @include mixins.card-border();
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: funcs.to-rem(41) funcs.to-rem(60);
+    background-color: var(--light-color);
+    transition: all 0.4s ease;
+
+    &__upper-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__title-part {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: funcs.to-rem(25);
+
+            & > p {
+                font-size: funcs.to-rem(60);
+            }
+        }
+
+         & > .icon {
+            background-image: url(../../img/plus.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: var(--step-card-icon-size);
+            height: var(--step-card-icon-size);
+            border: none;
+            background-color: transparent;
+            transition: transform 0.4s ease;
+            padding: 0;
+        }
+    }
+
+    &__separator {
+        background-color: var(--dark-color);
+        height: 1px;
+        max-height: 0;
+        opacity: 0;
+    }
+
+    &__description {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+.icon:focus {
+    background-image: url(../../img/minus.svg);
+    transform: rotate(180deg);
+}
+
+.accordion-card:focus-within{
+    gap: funcs.to-rem(30);
+    background-color: var(--simple-green-color);
+
+    & .accordion-card__separator {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    & .accordion-card__description{
+        max-height: 500px;
+        opacity: 1;
+    }
+
+
+}

@@ -1,0 +1,35 @@
+@use '../../global/scss/base/functions' as funcs;
+@use '../../global/scss/base/variables' as vars;
+@forward '../../global/scss/sections/chess-card-section';
+
+.case-studies-section {
+    background-color: var(--dark-color);
+
+    & > .case-separator {
+        background-color: var(--light-color);
+    }
+}   
+
+.case {
+    &__link {
+        & > p {
+            color: var(--simple-green-color);
+        }
+    }
+
+    &__text {
+        color: var(--light-color);
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .case-studies-section {
+        background-color: transparent; 
+        overflow-x: scroll;
+
+        & > .case {
+            background-color: var(--dark-color);
+        }
+    }
+}

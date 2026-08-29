@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus About us</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about_us-page.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="../main-page/main-page.html" class="website-title">
+                <img src="../img/Vector.png" alt="">
+                <h3>Positivus</h3>
+            </a>
+            <div class="nav-links-container">
+                <li class="nav-bar-item"><a href="../about_us-page/about_us-page.html">About us</a></li>
+                <li class="nav-bar-item"><a href="#">Services</a></li>
+                <li class="nav-bar-item"><a href="#">Use Cases</a></li>
+                <li class="nav-bar-item"><a href="#">Pricing</a></li>
+                <li class="nav-bar-item"><a href="#">Blog</a></li>
+                <li class="nav-bar-item"><a href="#" id="nav__button">Request a quote</a></li>
+                <li onclick="showBurgerMenu()" id="show-burger-menu-button"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#1f1f1f">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </div>
+        </ul>
+    </nav>
+    <main class="content">
+
+
+        <nav class="burger-menu-nav">
+            <ul>
+                <li onclick=hideBurgerMenu() class="burger-menu-nav__close-button"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></li>
+
+                <div class="nav-links-container">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" id="nav__button">Request a quote</a></li>
+                </div>
+            </ul>
+        </nav>
+    <section class="upper-section">
+            <img src="../img/megaphone.png" alt="">
+            <h1 class="upper-section__title">
+                Navigating the digital landscape for success
+            </h1>
+            <div class="upper-section__text">
+                <p>
+                    Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__upper-part">
+            <div class="footer__title">
+                <img src="../img/white-vector.svg" alt="">
+                <h2>Positivus</h2>
+            </div>
+            <div class="upper-part__items">
+                <a href="">About us</a>
+                <a href="">Services</a>
+                <a href="">Use Cases</a>
+                <a href="">Pricing</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="upper-part__icons">
+                <img src="../img/in.svg" alt="">
+                <img src="../img/facebook.svg" alt="">
+                <img src="../img/twitter.svg" alt="">
+            </div>
+        </div>
+        <div class="footer__main-part">
+            <div class="footer-text">
+                <span>Contact us:</span>
+                <div class="footer-text__items">
+                    <div class="footer-text__item">Email: info@positivus.com</div>
+                    <div class="footer-text__item">Phone: 555-567-8901</div>
+                    <div class="footer-text__item">Address: 1234 Main St <br> Moonstone City, Stardust State 12345</div>
+                </div>
+            </div>
+            <div class="footer__email">
+                <input type="email" name="" id="" placeholder="Email" autocomplete="on">
+                <button>Subscribe to news</button>
+            </div>
+        </div>
+        <div class="footer__separator"></div>
+        <div class="footer__lower-part">
+            <p>© 2023 Positivus. All Rights Reserved.</p>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>

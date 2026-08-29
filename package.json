@@ -1,0 +1,15 @@
+{
+  "name": "itstep.final.project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch ./:./"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Positivus company website",
+  "devDependencies": {
+    "sass": "^1.86.3"
+  }
+}

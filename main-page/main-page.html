@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivus</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main-page.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="../main-page/main-page.html" class="website-title">
+                <img src="../img/Vector.png" alt="">
+                <h3>Positivus</h3>
+            </a>
+            <div class="nav-links-container">
+                <li class="nav-bar-item"><a href="../about_us-page/about_us-page.html">About us</a></li>
+                <li class="nav-bar-item"><a href="#">Services</a></li>
+                <li class="nav-bar-item"><a href="#">Use Cases</a></li>
+                <li class="nav-bar-item"><a href="#">Pricing</a></li>
+                <li class="nav-bar-item"><a href="#">Blog</a></li>
+                <li class="nav-bar-item"><a href="#" id="nav__button">Request a quote</a></li>
+                <li onclick="showBurgerMenu()" id="show-burger-menu-button"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#1f1f1f">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </div>
+        </ul>
+    </nav>
+    <main class="content">
+
+
+        <nav class="burger-menu-nav">
+            <ul>
+                <li onclick=hideBurgerMenu() class="burger-menu-nav__close-button"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></li>
+
+                <div class="nav-links-container">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" id="nav__button">Request a quote</a></li>
+                </div>
+            </ul>
+        </nav>
+        <section class="upper-section">
+            <h1 class="upper-section__title">
+                Navigating the digital landscape for success
+            </h1>
+            <div class="upper-section__text">
+                <p>
+                    Our digital marketing agency helps businesses grow and succeed online through a range of services
+                    including SEO, PPC, social media marketing, and content creation.
+                </p>
+                <button>
+                    Book a consultation
+                </button>
+            </div>
+            <img src="../img/megaphone.png" alt="">
+        </section>
+        <section class="company-section">
+            <img class="company-section__item" src="../img/company-logos/amazon.svg"></img>
+            <img class="company-section__item" src="../img/company-logos/dribble.svg"></img>
+            <img class="company-section__item" src="../img/company-logos/hubspot.svg"></img>
+            <img class="company-section__item" src="../img/company-logos/notion.svg"></img>
+            <img class="company-section__item" src="../img/company-logos/netflix.svg"></img>
+            <img class="company-section__item" src="../img/company-logos/zoom.svg"></img>
+        </section>
+        <section class="title-section">
+            <h2>Services</h2>
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.
+                These services include:</p>
+        </section>
+        <section class="cards-section service-cards-section">
+
+            <div class="card service-card">
+                <div class="card__title">
+                    <h3>Search engine opitmization</h3>
+                </div>
+                <a href="#" class="card__text">
+                    <img src="../img/link-logos/green-black.png" alt="">
+                    <p>Learn more</p>
+                </a>
+                <img src="../img/service-cards-img/first-card.png" alt="" class="card__img">
+            </div>
+
+            <div class="card service-card">
+                <div class="card__title">
+                    <h3>Pay-per-click advertising</h3>
+                </div>
+                <a href="#" class="card__text">
+                    <img src="../img/link-logos/green-black.png" alt="">
+                    <p>Learn more</p>
+                </a>
+                <img src="../img/service-cards-img/second-card.png" alt="" class="card__img">
+            </div>
+
+            <div class="card service-card">
+                <div class="card__title">
+                    <h3>Social Media Marketing</h3>
+                </div>
+                <a href="#" class="card__text">
+                    <img src="../img/link-logos/black-white.png" alt="">
+                    <p>Learn more</p>
+                </a>
+                <img src="../img/service-cards-img/third-card.png" alt="" class="card__img">
+            </div>
+
+            <div class="card service-card">
+                <div class="card__title">
+                    <h3>Email Marketing</h3>
+                </div>
+                <a href="#" class="card__text">
+                    <img src="../img/link-logos/green-black.png" alt="">
+                    <p>Learn more</p>
+                </a>
+                <img src="../img/service-cards-img/fourth-card.png" alt="" class="card__img">
+            </div>
+
+            <div class="card service-card">
+                <div class="card__title">
+                    <h3>Content Creation</h3>
+                </div>
+                <a href="#" class="card__text">
+                    <img src="../img/link-logos/green-black.png" alt="">
+                    <p>Learn more</p>
+                </a>
+                <img src="../img/service-cards-img/fifth-card.png" alt="" class="card__img">
+            </div>
+
+            <div class="card service-card">
+                <div class="card__title">
+                    <h3>Analytics and Tracking</h3>
+                </div>
+                <a href="#" class="card__text">
+                    <img src="../img/link-logos/black-white.png" alt="">
+                    <p>Learn more</p>
+                </a>
+                <img src="../img/service-cards-img/sixths-card.png" alt="" class="card__img">
+            </div>
+        </section>
+        <section class="special-card-section make-things-happen-section">
+            <div class="special-card make-things-happen-card">
+                <div class="special-card__text">
+                    <h3 class="special-card__text__title">Let’s make things happen</h3>
+                    <p>Contact us today to learn more about how our digital marketing services can help your business
+                        grow and succeed online.</p>
+                    <button class="special-card__text__btn">Get your free proposal</button>
+                </div>
+                <img src="../img/guy.png" alt="" class="special-card__img">
+            </div>
+        </section>
+        <section class="title-section">
+            <h2>Case Studies</h2>
+            <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+        </section>
+        <section class="chess-card-section case-studies-section">
+            <div class="chess-card case">
+                <p class="case__text">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                <a href="" class="chess-card__link case__link">
+                    <p class="chess-card__link__text case__link__text">
+                        Learn more
+                    </p>
+                    <img src="../img/link-logos/green-black.png" alt="">
+                </a>
+            </div>
+
+            <div class="chess-card-vertical-separator case-separator"></div>
+
+            <div class="chess-card case">
+                <p class="case__text">For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                <a href="" class="chess-card__link case__link">
+                    <p class="chess-card__link__tex case__link__textt">
+                        Learn more
+                    </p>
+                    <img src="../img/link-logos/green-black.png" alt="">
+                </a>
+            </div>
+
+            <div class="chess-card-vertical-separator case-separator"></div>
+
+            <div class="chess-card case">
+                <p class="case__text">For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                <a href="" class="chess-card__link case__link">
+                    <p class="chess-card__link__text case__link__text">
+                        Learn more
+                    </p>
+                    <img src="../img/link-logos/green-black.png" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="title-section">
+            <h2>Our Working Process</h2>
+            <p>Step-by-Step Guide to Achieving Your Business Goals</p>
+        </section>
+        <section class="accordion-card-section">
+            <div class="accordion-card">
+                <div class="accordion-card__upper-section">
+                    <div class="accordion-card__upper-section__title-part">
+                        <p>01</p>
+                        <h3>Consultation</h3>
+                    </div>
+                    <button class="icon"></button>
+                </div>
+                <div class="accordion-card__separator"></div>
+                <p class="accordion-card__description">During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.</p>
+            </div>
+            <div class="accordion-card">
+                <div class="accordion-card__upper-section">
+                    <div class="accordion-card__upper-section__title-part">
+                        <p>02</p>
+                        <h3>Research and Strategy Development</h3>
+                    </div>
+                    <button class="icon"></button>
+                </div>
+                <div class="accordion-card__separator"></div>
+                <p class="accordion-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque incidunt non asperiores labore. Sequi repellat vero vitae animi assumenda.</p>
+            </div>
+            <div class="accordion-card">
+                <div class="accordion-card__upper-section">
+                    <div class="accordion-card__upper-section__title-part">
+                        <p>03</p>
+                        <h3>Implementation</h3>
+                    </div>
+                    <button class="icon"></button>
+                </div>
+                <div class="accordion-card__separator"></div>
+                <p class="accordion-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque incidunt non asperiores labore. Sequi repellat vero vitae animi assumenda.</p>
+            </div>
+            <div class="accordion-card">
+                <div class="accordion-card__upper-section">
+                    <div class="accordion-card__upper-section__title-part">
+                        <p>04</p>
+                        <h3>Monitoring and Optimization</h3>
+                    </div>
+                    <button class="icon"></button>
+                </div>
+                <div class="accordion-card__separator"></div>
+                <p class="accordion-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque incidunt non asperiores labore. Sequi repellat vero vitae animi assumenda.</p>
+            </div>
+            <div class="accordion-card">
+                <div class="accordion-card__upper-section">
+                    <div class="accordion-card__upper-section__title-part">
+                        <p>05</p>
+                        <h3>Reporting and Communication</h3>
+                    </div>
+                    <button class="icon"></button>
+                </div>
+                <div class="accordion-card__separator"></div>
+                <p class="accordion-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque incidunt non asperiores labore. Sequi repellat vero vitae animi assumenda.</p>
+            </div>
+            <div class="accordion-card">
+                <div class="accordion-card__upper-section">
+                    <div class="accordion-card__upper-section__title-part">
+                        <p>06</p>
+                        <h3>Continual Improvement</h3>
+                    </div>
+                    <button class="icon"></button>
+                </div>
+                <div class="accordion-card__separator"></div>
+                <p class="accordion-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque incidunt non asperiores labore. Sequi repellat vero vitae animi assumenda.</p>
+            </div>
+        </section>
+        <section class="title-section">
+            <h2>Team</h2>
+            <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+        </section>
+        <section class="team-section">
+            <div class="person-card">
+                <div class="person-card__upper-section">
+                    <img src="../img/people/John-Smith.png" alt="">
+                    <div>
+                        <div class="person-name">Jphn Smith</div>
+                        <div class="person-position">CEO and Founder</div>
+                    </div>
+                    <img src="../img/icon-in.svg" class="person-card-icon" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="person-card__lower-section">10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</div>
+            </div>
+            <div class="person-card">
+                <div class="person-card__upper-section">
+                    <img src="../img/people/Jane-Doe.png" alt="">
+                    <div>
+                        <div class="person-name">Jane Doe</div>
+                        <div class="person-position">Director of Operations</div>
+                    </div>
+                    <img src="../img/icon-in.svg" class="person-card-icon" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="person-card__lower-section">7+ years of experience in project management and team leadership. Strong organizational and communication skills</div>
+            </div>
+            <div class="person-card">
+                <div class="person-card__upper-section">
+                    <img src="../img/people/Michael-Brown.png" alt="">
+                    <div>
+                        <div class="person-name">Michael Brown</div>
+                        <div class="person-position">Senior SEO Specialist</div>
+                    </div>
+                    <img src="../img/icon-in.svg" class="person-card-icon" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="person-card__lower-section">5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization</div>
+            </div>
+            <div class="person-card">
+                <div class="person-card__upper-section">
+                    <img src="../img/people/Emily-Johnson.png" alt="">
+                    <div>
+                        <div class="person-name">Emily Johnson</div>
+                        <div class="person-position">PPC Manager</div>
+                    </div>
+                    <img src="../img/icon-in.svg" class="person-card-icon" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="person-card__lower-section">3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</div>
+            </div>
+            <div class="person-card">
+                <div class="person-card__upper-section">
+                    <img src="../img/people/Brian Williams.png" alt="">
+                    <div>
+                        <div class="person-name">Brian Williams</div>
+                        <div class="person-position">Social Media Specialist</div>
+                    </div>
+                    <img src="../img/icon-in.svg" class="person-card-icon" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="person-card__lower-section">4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</div>
+            </div>
+            <div class="person-card">
+                <div class="person-card__upper-section">
+                    <img src="../img/people/Sarah-Kim.png" alt="">
+                    <div>
+                        <div class="person-name">Sarah Kim</div>
+                        <div class="person-position">Content Creator</div>
+                    </div>
+                    <img src="../img/icon-in.svg" class="person-card-icon" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="person-card__lower-section">2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries</div>
+            </div>
+            <button>See all team</button>
+        </section>
+        <section class="title-section">
+            <h2>Testimonials</h2>
+            <p>Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+        </section>
+          <section class="testimonials-section">
+             <div class="testimony">
+                <div class="bubble-wrapper">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                </div>
+                <div class="person-part">
+                    <h4 class="person-name">Sigma guy</h4>
+                    <div class="person-position">Marketing Director at Sigma Crop</div>
+                </div>
+             </div>
+             <div class="testimony">
+                <div class="bubble-wrapper">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                </div>
+                <div class="person-part">
+                    <h4 class="person-name">Sigma guy</h4>
+                    <div class="person-position">Marketing Director at Sigma Crop</div>
+                </div>
+             </div>
+             <div class="testimony">
+                <div class="bubble-wrapper">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                </div>
+                <div class="person-part">
+                    <h4 class="person-name">Sigma guy</h4>
+                    <div class="person-position">Marketing Director at Sigma Crop</div>
+                </div>
+             </div>
+             <div class="testimony">
+                <div class="bubble-wrapper">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                </div>
+                <div class="person-part">
+                    <h4 class="person-name">Sigma guy</h4>
+                    <div class="person-position">Marketing Director at Sigma Crop</div>
+                </div>
+             </div>
+             <div class="testimony">
+                <div class="bubble-wrapper">
+                    <p>"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."</p>
+                </div>
+                <div class="person-part">
+                    <h4 class="person-name">Sigma guy</h4>
+                    <div class="person-position">Marketing Director at Sigma Crop</div>
+                </div>
+             </div>
+          </section>
+        <section class="title-section">
+            <h2>Contact Us</h2>
+            <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+        </section>
+        <section class="input-section">
+            <form action="">
+                <div class="radio-part">
+                    <label for="">Say Hi</label>
+                    <input type="radio" name="type">
+                    <label for="">Get a Quote</label>
+                    <input type="radio" name="type">
+                </div>
+                <div class="text-input-part">
+                    <div class="name-part">
+                        <label for="">Name</label>
+                        <input type="text" name="" id="" placeholder="Name">
+                    </div>
+                    <div class="email-part">
+                        <label for="">Email*</label>
+                        <input type="email" name="" id="" placeholder="Email">
+                    </div>
+                    <div class="message-part">
+                        <label for="">Message*</label>
+                        <textarea name="" id="" rows="6" cols="50" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <button>Send Message</button>
+            </form>
+            <img src="../img/stars.png" alt="">
+        </section>
+    </main>
+    <footer>
+        <div class="footer__upper-part">
+            <div class="footer__title">
+                <img src="../img/white-vector.svg" alt="">
+                <h2>Positivus</h2>
+            </div>
+            <div class="upper-part__items">
+                <a href="">About us</a>
+                <a href="">Services</a>
+                <a href="">Use Cases</a>
+                <a href="">Pricing</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="upper-part__icons">
+                <img src="../img/in.svg" alt="">
+                <img src="../img/facebook.svg" alt="">
+                <img src="../img/twitter.svg" alt="">
+            </div>
+        </div>
+        <div class="footer__main-part">
+            <div class="footer-text">
+                <span>Contact us:</span>
+                <div class="footer-text__items">
+                    <div class="footer-text__item">Email: info@positivus.com</div>
+                    <div class="footer-text__item">Phone: 555-567-8901</div>
+                    <div class="footer-text__item">Address: 1234 Main St <br> Moonstone City, Stardust State 12345</div>
+                </div>
+            </div>
+            <div class="footer__email">
+                <input type="email" name="" id="" placeholder="Email" autocomplete="on">
+                <button>Subscribe to news</button>
+            </div>
+        </div>
+        <div class="footer__separator"></div>
+        <div class="footer__lower-part">
+            <p>© 2023 Positivus. All Rights Reserved.</p>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
+    <script src="main-page.js"></script>
+</body>
+
+</html>

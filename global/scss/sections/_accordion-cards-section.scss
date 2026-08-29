@@ -1,0 +1,19 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+@use '../base/mixins';
+@forward '../components/accordion-card';
+
+//NOTE: Implement totally abstract accordion card component if a variation beside simple-green one is needed
+.accordion-card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: funcs.to-rem(30);
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .accordion-card-section {
+        @include mixins.card-padding();
+    }
+}

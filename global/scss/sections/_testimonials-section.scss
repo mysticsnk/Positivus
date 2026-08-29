@@ -1,0 +1,24 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+@forward '../components/testimony';
+
+.testimonials-section {
+    width: 100%;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border-radius: funcs.to-rem(45);
+    padding: funcs.to-rem(100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: funcs.to-rem(200);
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;   
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .testimony-card {
+        width: funcs.to-rem(300);
+    }
+}

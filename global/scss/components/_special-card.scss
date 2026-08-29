@@ -1,0 +1,43 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+@use '../base/mixins';
+
+.special-card {
+    padding: funcs.to-rem(60);
+    border-radius: funcs.to-rem(45);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: funcs.to-rem(26);
+        width: 40%;
+
+        &__btn {
+            @include mixins.special-button();
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: funcs.to-rem(100);
+        top: funcs.to-rem(-30);
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .special-card {
+
+        &__text {
+            width: 100%;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@use '../../global/scss/base/mixins';
+@use '../../global/scss/base/functions' as funcs;
+@use '../../global/scss/base/variables' as vars;
+@forward '../../global/scss/sections/cards-section';
+
+.service-card:nth-child(1)>.card__title>h3,
+.service-card:nth-child(4)>.card__title>h3,
+.service-card:nth-child(6)>.card__title>h3 {
+    background-color: var(--simple-green-color);
+}
+
+.service-card:nth-child(2)>.card__title>h3,
+.service-card:nth-child(3)>.card__title>h3,
+.service-card:nth-child(5)>.card__title>h3 {
+    background-color: var(--light-color);
+}
+
+
+.service-card:nth-child(3n-2) {
+    background-color: var(--light-color);
+}
+
+.service-card:nth-child(3n-1) {
+    background-color: var(--simple-green-color);
+}
+
+.service-card:nth-child(3n) {
+    background-color: var(--dark-color);
+
+    & p {
+        color: var(--light-color);
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+    
+    .service-cards-section {
+        @include mixins.card-padding();
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 1fr);
+
+    }
+}

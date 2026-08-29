@@ -1,0 +1,35 @@
+@use '../base/functions' as funcs;
+
+$h2-title-padding: funcs.to-rem(7);
+$content-padding: funcs.to-rem(100);
+$step-card-size: funcs.to-rem(58);
+$icon-io-size: funcs.to-rem(34);
+$card-padding: funcs.to-rem(15);
+$footer-icon-size: funcs.to-rem(29);
+$mobile-breakpoint: 1110px;
+
+
+:root {
+    --simple-green-color: #b9ff66;
+    --dark-color: #191a23;
+    --light-color: #f3f3f3;
+    --hover-color: #292A32;
+    --desktop-h1: 60px;
+    --desktop-h2: 40px;
+    --desktop-h3: 30px;
+    --desktop-h4: 24px;
+    --desktop-p: 20px;
+    --mob-h1: 43px;
+    --mob-h2: 36px;
+    --mob-h3: 26px;
+    --mob-h4: 18px;
+    --mob-p: 16px;
+    --site-width: clamp(550px, 100%, 1440px);
+    --upper-section-text-width: 45%;
+    --h2-title-padding: #{$h2-title-padding};
+    --content-margin: #{$content-padding};
+    --step-card-icon-size: #{$step-card-size};
+    --icon-io-size: #{$icon-io-size};
+    --card-padding: #{$card-padding};
+    --footer-icon-size: #{$footer-icon-size};
+}

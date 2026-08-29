@@ -1,0 +1,58 @@
+@use '../base/functions' as funcs;
+@use '../base/variables' as vars;
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    width: var(--site-width);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: var(--desktop-h1);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: var(--desktop-h2);
+    font-weight: 550;
+}
+
+h3 {
+    font-size: var(--desktop-h3);
+    font-weight: 500;
+}
+
+h4 {
+    font-size: var(--desktop-h4);
+}
+
+p {
+    font-size: var(--desktop-p);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.content {
+    width: calc(100% - var(--content-margin) * 2);
+    margin-left: var(--content-margin);
+    margin-right: var(--content-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: funcs.to-rem(70);
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .content {
+        margin: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,71 @@
+@use '../../global/scss/base/mixins';
+@use '../../global/scss/base/functions' as funcs;
+@use '../../global/scss/base/variables' as vars;
+
+.team-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: funcs.to-rem(40);
+
+    & > button {
+        @include mixins.special-button();
+        height: min-content;
+        grid-column: 3;
+    }
+
+}
+
+.person-card {
+    @include mixins.card-border();
+    display: flex;
+    flex-direction: column;
+    gap: funcs.to-rem(28);
+    padding: funcs.to-rem(40) funcs.to-rem(35);
+
+    & > .separator {
+        height: 1px;
+        width: 100%;
+        background-color: var(--dark-color);
+    }
+
+    &__upper-section {
+        display: flex;
+        flex-direction: row;
+        gap: funcs.to-rem(20);
+        position: relative;
+
+        & > div {
+            align-self: end;
+            justify-self: start;
+            display: flex;
+            flex-direction: column;
+            gap: funcs.to-rem(5);
+            position: relative;
+
+            & > .person-name {
+                font-weight: 600;
+            }
+        }
+    }
+
+}
+
+.person-card-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: var(--icon-io-size);
+    height: var(--icon-io-size);
+
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .team-section {
+        @include mixins.card-padding();
+        display: flex;
+        flex-direction: column;
+
+    }
+}

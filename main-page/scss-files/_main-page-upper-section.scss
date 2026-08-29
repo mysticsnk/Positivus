@@ -1,0 +1,52 @@
+@use '../../global/scss/base/mixins';
+@use '../../global/scss/base/functions' as funcs;
+@use '../../global/scss/base/variables' as vars;
+
+.upper-section {
+    display: grid;
+    grid-template-columns: var(--upper-section-text-width) auto;
+    grid-template-rows: 1fr 1fr;
+    row-gap: funcs.to-rem(35);
+
+    &__text {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        gap: funcs.to-rem(35);
+
+        &>button {
+            @include mixins.special-button();
+            align-self: start;
+        }
+    }
+
+    &>img {
+        grid-row: span 2;
+        grid-column: 2;
+        justify-self: end;
+    }
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+    .upper-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        width: 80%;
+
+
+        & * {
+            width: 100%;
+            justify-self: center;
+        }
+
+        &>img {
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        &__text {
+            grid-row: 3;
+        }
+    }
+}

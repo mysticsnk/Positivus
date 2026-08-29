@@ -1,0 +1,16 @@
+@use '../base/variables' as vars;
+@use '../base/mixins';
+@forward '../components/special-card';
+
+.special-card-section {
+    width: 100%;
+}
+
+@media (max-width: vars.$mobile-breakpoint) {
+
+    .special-card-section {
+        display: flex;
+        justify-content: center;
+        @include mixins.card-padding();
+    }
+}
